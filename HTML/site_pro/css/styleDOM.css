@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    padding: 40px 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #eaf6ff;
+    background:
+        radial-gradient(circle at top left, rgba(0, 217, 255, 0.22), transparent 32%),
+        radial-gradient(circle at bottom right, rgba(57, 255, 182, 0.18), transparent 34%),
+        linear-gradient(135deg, #07111f 0%, #0b1020 50%, #111827 100%);
+}
+
+h1 {
+    margin-bottom: 32px;
+    text-align: center;
+    font-size: clamp(2rem, 6vw, 3.8rem);
+    color: #ffffff;
+    text-shadow: 0 0 24px rgba(0, 217, 255, 0.35);
+}
+
+section {
+    width: min(760px, 100%);
+    margin: 0 auto 24px;
+    padding: 32px;
+    text-align: center;
+    border: 1px solid rgba(0, 217, 255, 0.24);
+    border-radius: 18px;
+    background: rgba(8, 17, 34, 0.86);
+    box-shadow: 0 22px 55px rgba(0, 0, 0, 0.34), inset 0 0 22px rgba(0, 217, 255, 0.06);
+    backdrop-filter: blur(12px);
+}
+
+.first-element {
+    border-color: rgba(0, 217, 255, 0.34);
+}
+
+.second-element {
+    border-color: rgba(57, 255, 182, 0.34);
+}
+
+h2 {
+    margin-bottom: 12px;
+    font-size: 1.6rem;
+    color: #ffffff;
+}
+
+p {
+    margin-bottom: 18px;
+    color: #a9bed3;
+    line-height: 1.7;
+}
+
+input {
+    width: min(320px, 100%);
+    min-height: 44px;
+    margin: 8px;
+    padding: 0 14px;
+    border: 1px solid rgba(148, 163, 184, 0.26);
+    border-radius: 10px;
+    color: #ffffff;
+    background: rgba(2, 8, 23, 0.55);
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input::placeholder {
+    color: #7f94aa;
+}
+
+input:focus {
+    border-color: rgba(0, 217, 255, 0.8);
+    box-shadow: 0 0 18px rgba(0, 217, 255, 0.16);
+}
+
+button {
+    min-height: 44px;
+    margin: 8px;
+    padding: 0 20px;
+    border: 0;
+    border-radius: 10px;
+    color: #06111f;
+    font-weight: 700;
+    cursor: pointer;
+    background: linear-gradient(135deg, #00d9ff, #39ffb6);
+    box-shadow: 0 12px 24px rgba(0, 217, 255, 0.18);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 16px 30px rgba(57, 255, 182, 0.22);
+}
+
+#resultado {
+    min-height: 28px;
+    margin-top: 16px;
+    margin-bottom: 0;
+    padding: 12px 14px;
+    border-radius: 10px;
+    color: #ffffff;
+    background: rgba(2, 8, 23, 0.38);
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 28px 14px;
+    }
+
+    section {
+        padding: 24px 18px;
+    }
+
+    input,
+    button {
+        width: 100%;
+        margin: 6px 0;
+    }
+}
