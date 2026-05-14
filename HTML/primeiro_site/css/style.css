@@ -1,8 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    background-color: #333;
-
+    box-sizing: border-box;
 }
 
 body{
@@ -12,12 +11,135 @@ body{
     height: 100vh;
 }
 
+
+nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+nav-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
 h1{
-    font-size: 20px;
-    color: white;
+    color: #333;
+    font-size: 24px;
 }
 
 p{
+    color: #333;
     font-size: 16px;
-    color: white;
+}
+
+a{
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    border: 1px solid #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+main-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+ol{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+ol li{
+    color: #333;
+    font-size: 16px;
+    border: 1px solid #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+dl{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+dl dt{
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+dl dd{
+    color: #333;
+    font-size: 16px;
+}
+
+ul li{
+    color: #333;
+    font-size: 16px;
+    border: 1px solid #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
 }
