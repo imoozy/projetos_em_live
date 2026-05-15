@@ -30,3 +30,15 @@ function addCorredor() {
     corredor[numero].innerText = novo.value;
 }
 
+const botao = document.getElementById("btn1");
+
+botao.addEventListener("click", clicar);
+botao.addEventListener("mouseenter", sobre);
+
+function clicar() {
+    alert("Você clicou no botão!");
+};
+
+function sobre() {
+    alert("Clique aqui!!");
+};

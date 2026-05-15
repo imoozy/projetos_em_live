@@ -208,26 +208,56 @@
 
 //Usando while
 
-let contador =1;
+// let contador =1;
 
-while (contador <= 5) {
-    console.log("Número: " + contador)
-    contador++;
-}
+// while (contador <= 5) {
+//     console.log("Número: " + contador)
+//     contador++;
+// }
 
 // -----------------------------------------------------------------------------
 
 
 //exemplo real de uso de while
 
-let credito = 10;
+// let credito = 10;
 
-while (credito > 0) {
-    let compra = Number(prompt("Qual o valor da compra?"))
-    credito = credito - compra;
+// while (credito > 0) {
+//     let compra = Number(prompt("Qual o valor da compra?"))
+//     credito = credito - compra;
 
-    alert("Aproveite sua compra!")
-    alert("Seu saldo restante é: " + credito);
-}
+//     alert("Aproveite sua compra!")
+//     alert("Seu saldo restante é: " + credito);
+// }
 
-alert("Até a proxima!");
+// alert("Até a proxima!");
+
+
+// -----------------------------------------------------------------------------
+
+// exemplo do while para adicionar itens a uma compra
+
+let totalCompra = 0;
+let resp;
+
+do {
+    resp = prompt("Deseja adicionar um item à compra? (sim/não)").toLowerCase();
+
+    if (resp === "sim") {
+        totalCompra = totalCompra + 3;
+    }
+} while (resp === "sim");
+
+alert("O total da compra é: R$ " + totalCompra);
+
+// -----------------------------------------------------------------------------
+
+
+//exemplo de estrutura for
+
+let contagem = 1;
+
+for (contagem; contagem <= 5; contagem++) {
+    console.log("Número: " + contagem);
+};
+
