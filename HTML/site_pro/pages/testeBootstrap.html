@@ -171,6 +171,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#componentes">Componentes</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#formularios">Formulários</a>
+                        </li>
                         <li class="nav-item ms-lg-3">
                             <a class="btn btn-sm btn-outline-primary" href="../index.html">Voltar ao portfólio</a>
                         </li>
@@ -298,6 +301,156 @@
                 </div>
             </div>
         </section>
+
+        <section class="py-5" id="formularios">
+            <div class="container">
+                <div class="row mb-4">
+                    <div class="col-lg-8">
+                        <h2 class="section-title">Formulário e controles</h2>
+                        <p class="text-muted mb-0">Área para testar checkbox, radio, select, menu dropdown, input group
+                            e validação visual do Bootstrap.</p>
+                    </div>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-lg-4">
+                        <div class="card component-card">
+                            <div class="card-body p-4">
+                                <h3 class="h5 fw-bold mb-3">Menu dropdown</h3>
+                                <div class="dropdown">
+                                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownTeste"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Escolher ação
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownTeste">
+                                        <li><a class="dropdown-item" href="#formularios">Editar cadastro</a></li>
+                                        <li><a class="dropdown-item" href="#formularios">Duplicar dados</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="#formularios">Arquivar teste</a></li>
+                                    </ul>
+                                </div>
+
+                                <hr class="my-4">
+
+                                <h3 class="h5 fw-bold mb-3">Opções soltas</h3>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="checkNewsletter">
+                                    <label class="form-check-label" for="checkNewsletter">
+                                        Receber novidades
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="checkTermos">
+                                    <label class="form-check-label" for="checkTermos">
+                                        Aceitar termos
+                                    </label>
+                                </div>
+
+                                <p class="fw-bold mt-4 mb-2">Nível de interesse</p>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="interesse" id="radioBaixo"
+                                        value="baixo">
+                                    <label class="form-check-label" for="radioBaixo">Baixo</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="interesse" id="radioMedio"
+                                        value="medio" checked>
+                                    <label class="form-check-label" for="radioMedio">Médio</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="interesse" id="radioAlto"
+                                        value="alto">
+                                    <label class="form-check-label" for="radioAlto">Alto</label>
+                                </div>
+
+                                <label class="form-label fw-bold mt-4" for="selectTema">Select de tema</label>
+                                <select class="form-select" id="selectTema">
+                                    <option selected>Bootstrap</option>
+                                    <option>HTML</option>
+                                    <option>CSS</option>
+                                    <option>JavaScript</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-8">
+                        <div class="card component-card">
+                            <div class="card-body p-4">
+                                <h3 class="h5 fw-bold mb-3">Formulário com validação</h3>
+                                <form class="row g-3 needs-validation" novalidate>
+                                    <div class="col-md-6">
+                                        <label for="nomeUsuario" class="form-label">Nome</label>
+                                        <input type="text" class="form-control" id="nomeUsuario" required>
+                                        <div class="valid-feedback">Tudo certo.</div>
+                                        <div class="invalid-feedback">Digite seu nome.</div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <label for="emailUsuario" class="form-label">E-mail</label>
+                                        <input type="email" class="form-control" id="emailUsuario" required>
+                                        <div class="invalid-feedback">Digite um e-mail válido.</div>
+                                    </div>
+
+                                    <div class="col-md-7">
+                                        <label for="usuarioGithub" class="form-label">Input group</label>
+                                        <div class="input-group has-validation">
+                                            <span class="input-group-text" id="arroba">@</span>
+                                            <input type="text" class="form-control" id="usuarioGithub"
+                                                aria-describedby="arroba" required>
+                                            <div class="invalid-feedback">Informe um usuário.</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-5">
+                                        <label for="trilhaUsuario" class="form-label">Trilha</label>
+                                        <select class="form-select" id="trilhaUsuario" required>
+                                            <option selected disabled value="">Escolha...</option>
+                                            <option>Frontend</option>
+                                            <option>Backend</option>
+                                            <option>Full stack</option>
+                                        </select>
+                                        <div class="invalid-feedback">Escolha uma trilha.</div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <p class="form-label mb-2">Formato preferido</p>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="formatoCurso"
+                                                id="formatoOnline" value="online" required>
+                                            <label class="form-check-label" for="formatoOnline">Online</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="formatoCurso"
+                                                id="formatoPresencial" value="presencial" required>
+                                            <label class="form-check-label" for="formatoPresencial">Presencial</label>
+                                            <div class="invalid-feedback">Escolha um formato.</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="termosFormulario"
+                                                required>
+                                            <label class="form-check-label" for="termosFormulario">
+                                                Confirmo que os dados estão corretos
+                                            </label>
+                                            <div class="invalid-feedback">Você precisa confirmar antes de enviar.</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <button class="btn btn-accent" type="submit">Enviar teste</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="footer py-4">
@@ -308,6 +461,24 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        (function () {
+            'use strict';
+
+            var forms = document.querySelectorAll('.needs-validation');
+
+            Array.prototype.slice.call(forms).forEach(function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (!form.checkValidity()) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        })();
+    </script>
 </body>
 
 </html>

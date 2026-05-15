@@ -194,13 +194,40 @@
 
 //usando return para calcular a média de notas
 
-function calcularMedia(nota1, nota2) {
-    var media = (nota1 + nota2) / 2;
-    return media;
+// function calcularMedia(nota1, nota2) {
+//     var media = (nota1 + nota2) / 2;
+//     return media;
+// }
+
+// var nota1 = parseFloat(prompt("Digite sua nota (0 a 10)"));
+// var nota2 = parseFloat(prompt("Digite sua segunda nota (0 a 10)"));
+// var mediaFinal = calcularMedia(nota1, nota2);
+// console.log("Sua média é: " + mediaFinal.toFixed(2));
+
+// -----------------------------------------------------------------------------
+
+//Usando while
+
+let contador =1;
+
+while (contador <= 5) {
+    console.log("Número: " + contador)
+    contador++;
 }
 
-var nota1 = parseFloat(prompt("Digite sua nota (0 a 10)"));
-var nota2 = parseFloat(prompt("Digite sua segunda nota (0 a 10)"));
-var mediaFinal = calcularMedia(nota1, nota2);
-console.log("Sua média é: " + mediaFinal.toFixed(2));
+// -----------------------------------------------------------------------------
 
+
+//exemplo real de uso de while
+
+let credito = 10;
+
+while (credito > 0) {
+    let compra = Number(prompt("Qual o valor da compra?"))
+    credito = credito - compra;
+
+    alert("Aproveite sua compra!")
+    alert("Seu saldo restante é: " + credito);
+}
+
+alert("Até a proxima!");
